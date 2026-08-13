@@ -1,0 +1,9 @@
+patient_id,name,age,municipality,risk_level,medication_support
+1001,Ingrid Hansen,84,Haugesund,high,yes
+1002,Kari Nilsen,73,Haugesund,medium,yes
+1003,Ola Berg,68,Karmøy,low,no
+1004,Liv Johansen,91,Tysvær,high,yes
+1005,Per Olsen,77,Haugesund,medium,no
+1006,Anne Larsen,82,Karmøy,high,yes
+1007,Erik Solheim,64,Tysvær,low,no
+1008,Marit Vik,70,Haugesund,medium,yes
