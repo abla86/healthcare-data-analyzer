@@ -1,6 +1,8 @@
 # Healthcare Data Analyzer
 
-A small Python portfolio project for validating and analyzing healthcare-related CSV data.
+A small Python portfolio project for validating and analyzing **synthetic healthcare-related CSV data**.
+
+The included dataset is demonstration data only. It does not contain real patient records.
 
 ## Features
 
@@ -12,7 +14,7 @@ A small Python portfolio project for validating and analyzing healthcare-related
 - Generates a text report
 - Uses type hints and dataclasses
 - Includes pytest unit tests
-- Includes sample data
+- Includes synthetic sample data
 
 ## Project structure
 
@@ -33,6 +35,10 @@ healthcare-data-analyzer/
 └── .gitignore
 ```
 
+## Data safety
+
+The repository uses synthetic identifiers (`Patient 001`, `Patient 002`, etc.) and generic municipality labels. No real patient information should be committed to this repository.
+
 ## Run
 
 Create a virtual environment:
@@ -47,7 +53,7 @@ Activate it in PowerShell:
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install test dependency:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -67,11 +73,11 @@ pytest
 
 ## Example output
 
-The program prints:
+The program reports:
 
 - total records
 - average age
-- high-risk patients
-- medication support count
+- high-risk records
+- medication-support count
 - municipality distribution
-- high-risk patient names
+- high-risk record names/identifiers
