@@ -40,15 +40,15 @@ def test_count_medication_support() -> None:
 def test_municipality_distribution() -> None:
     records = load_records(DATA_FILE)
     assert municipality_distribution(records) == {
-        "Haugesund": 4,
-        "Karmøy": 2,
-        "Tysvær": 2,
+        "Municipality A": 4,
+        "Municipality B": 2,
+        "Municipality C": 2,
     }
 
 
 def test_filter_by_municipality_is_case_insensitive() -> None:
     records = load_records(DATA_FILE)
-    result = filter_by_municipality(records, "haugesund")
+    result = filter_by_municipality(records, "municipality a")
     assert len(result) == 4
 
 
