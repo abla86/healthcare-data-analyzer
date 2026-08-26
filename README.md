@@ -81,3 +81,7 @@ The program reports:
 - medication-support count
 - municipality distribution
 - high-risk record names/identifiers
+
+## Portfolio
+
+This repository is part of the ABLA86 engineering portfolio. The repository is the source of truth for its implementation, tests and current project status.
