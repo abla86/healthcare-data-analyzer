@@ -50,6 +50,7 @@ def load_records(file_path: str | Path) -> list[PatientRecord]:
             )
 
         records: list[PatientRecord] = []
+        seen_patient_ids: set[int] = set()
 
         for row_number, row in enumerate(reader, start=2):
             try:
@@ -59,6 +60,12 @@ def load_records(file_path: str | Path) -> list[PatientRecord]:
                 raise ValueError(
                     f"Invalid numeric value on row {row_number}."
                 ) from exc
+
+            if patient_id in seen_patient_ids:
+                raise ValueError(
+                    f"Duplicate patient_id on row {row_number}: {patient_id}"
+                )
+            seen_patient_ids.add(patient_id)
 
             name = row["name"].strip()
             municipality = row["municipality"].strip()
