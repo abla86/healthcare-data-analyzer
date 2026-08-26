@@ -1,9 +1,9 @@
 patient_id,name,age,municipality,risk_level,medication_support
-1001,Ingrid Hansen,84,Haugesund,high,yes
-1002,Kari Nilsen,73,Haugesund,medium,yes
-1003,Ola Berg,68,Karmøy,low,no
-1004,Liv Johansen,91,Tysvær,high,yes
-1005,Per Olsen,77,Haugesund,medium,no
-1006,Anne Larsen,82,Karmøy,high,yes
-1007,Erik Solheim,64,Tysvær,low,no
-1008,Marit Vik,70,Haugesund,medium,yes
+1001,Patient 001,84,Municipality A,high,yes
+1002,Patient 002,73,Municipality A,medium,yes
+1003,Patient 003,68,Municipality B,low,no
+1004,Patient 004,91,Municipality C,high,yes
+1005,Patient 005,77,Municipality A,medium,no
+1006,Patient 006,82,Municipality B,high,yes
+1007,Patient 007,64,Municipality C,low,no
+1008,Patient 008,70,Municipality A,medium,yes
