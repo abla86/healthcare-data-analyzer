@@ -4,6 +4,10 @@ A small Python portfolio project for validating and analyzing **synthetic health
 
 The included dataset is demonstration data only. It does not contain real patient records.
 
+## Purpose
+
+The project demonstrates practical Python data-processing skills: structured input validation, type-safe transformation, aggregation, filtering, reporting and unit testing.
+
 ## Features
 
 - Reads CSV files
@@ -20,68 +24,42 @@ The included dataset is demonstration data only. It does not contain real patien
 
 ```text
 healthcare-data-analyzer/
-├── data/
-│   └── patients.csv
-├── src/
-│   ├── __init__.py
-│   ├── analyzer.py
-│   ├── models.py
-│   └── report.py
-├── tests/
-│   └── test_analyzer.py
-├── main.py
+├── data/                  # Synthetic demonstration data
+├── src/                   # Analysis, models and reporting
+├── tests/                 # Unit tests
+├── main.py                # Application entry point
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
 
-## Data safety
-
-The repository uses synthetic identifiers (`Patient 001`, `Patient 002`, etc.) and generic municipality labels. No real patient information should be committed to this repository.
-
-## Run
-
-Create a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-Activate it in PowerShell:
+## Run locally
 
 ```powershell
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-Run the analyzer:
-
-```bash
 python main.py
 ```
 
-Run tests:
+## Testing
 
-```bash
+Run the automated test suite with:
+
+```powershell
 pytest
 ```
 
-## Example output
+The current portfolio verification run completed with **9 passed tests**.
 
-The program reports:
+## Data safety
 
-- total records
-- average age
-- high-risk records
-- medication-support count
-- municipality distribution
-- high-risk record names/identifiers
+The repository uses synthetic demonstration records. No real patient information should be committed to this public repository. The application is an educational/data-engineering demonstration and is not a clinical decision-support system.
 
-## Portfolio
+## Portfolio value
 
-This repository is part of the ABLA86 engineering portfolio. The repository is the source of truth for its implementation, tests and current project status.
+This project demonstrates Python, CSV processing, validation, data modelling, aggregation, filtering, reporting and automated testing in a healthcare-related but non-sensitive demonstration context.
+
+## Status
+
+**Portfolio / demonstration project.** The repository is the source of truth for the implementation and current project status.
