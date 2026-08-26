@@ -6,12 +6,35 @@ The included dataset is demonstration data only. It does not contain real patien
 
 ## Purpose
 
-The project demonstrates practical Python data-processing skills: structured input validation, type-safe transformation, aggregation, filtering, reporting and unit testing.
+The project demonstrates practical Python data-processing skills: structured input validation, explicit data-quality assessment, type-safe transformation, aggregation, filtering, reporting and unit testing.
+
+## Data-quality pipeline
+
+Before analysis, the input dataset passes through a separate quality gate:
+
+```text
+CSV input
+   ↓
+Schema check
+   ↓
+Completeness / uniqueness / value validation
+   ↓
+PASS | PASS WITH WARNINGS | FAIL
+   ↓
+Analysis
+   ↓
+Report
+```
+
+A dataset that fails the quality gate is not analyzed. This prevents invalid input from silently producing a report.
 
 ## Features
 
 - Reads CSV files
 - Validates required fields
+- Assesses schema conformity and completeness
+- Detects duplicate patient identifiers
+- Validates numeric, boolean and risk-domain values
 - Converts numeric and boolean values safely
 - Calculates summary metrics
 - Filters records by municipality and risk level
@@ -25,10 +48,11 @@ The project demonstrates practical Python data-processing skills: structured inp
 ```text
 healthcare-data-analyzer/
 ├── data/                  # Synthetic demonstration data
-├── src/                   # Analysis, models and reporting
+├── src/                   # Quality, analysis, models and reporting
 ├── tests/                 # Unit tests
-├── main.py                # Application entry point
+├── main.py                # Quality-gated application entry point
 ├── requirements.txt
+├── PORTFOLIO-WORKLOG.md
 ├── README.md
 └── .gitignore
 ```
@@ -50,7 +74,7 @@ Run the automated test suite with:
 pytest
 ```
 
-The current portfolio verification run completed with **9 passed tests**.
+The tests cover both the existing analysis behaviour and the data-quality gate, including duplicate identifiers and invalid values.
 
 ## Data safety
 
@@ -58,7 +82,7 @@ The repository uses synthetic demonstration records. No real patient information
 
 ## Portfolio value
 
-This project demonstrates Python, CSV processing, validation, data modelling, aggregation, filtering, reporting and automated testing in a healthcare-related but non-sensitive demonstration context.
+This project demonstrates Python, CSV processing, data-quality engineering, validation, data modelling, aggregation, filtering, reporting and automated testing in a healthcare-related but non-sensitive demonstration context.
 
 ## Status
 
