@@ -87,3 +87,7 @@ This project demonstrates Python, CSV processing, data-quality engineering, vali
 ## Status
 
 **Portfolio / demonstration project.** The repository is the source of truth for the implementation and current project status.
+
+## Change-control audit
+
+See [docs/REPOSITORY-CHANGE-AUDIT-2026-08-28.md](docs/REPOSITORY-CHANGE-AUDIT-2026-08-28.md) for the repository change-control and traceability record.
