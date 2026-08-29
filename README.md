@@ -80,6 +80,10 @@ The tests cover both the existing analysis behaviour and the data-quality gate, 
 
 The repository uses synthetic demonstration records. No real patient information should be committed to this public repository. The application is an educational/data-engineering demonstration and is not a clinical decision-support system.
 
+## Portfolio status
+
+**Under review — not currently promoted as a flagship portfolio project.** The project provides useful Python and data-quality evidence, but it is intentionally kept below flagship status until its implementation, testing and documentation provide sufficient depth for a primary portfolio position.
+
 ## Portfolio value
 
 This project demonstrates Python, CSV processing, data-quality engineering, validation, data modelling, aggregation, filtering, reporting and automated testing in a healthcare-related but non-sensitive demonstration context.
