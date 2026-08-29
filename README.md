@@ -91,3 +91,8 @@ This project demonstrates Python, CSV processing, data-quality engineering, vali
 ## Change-control audit
 
 See [docs/REPOSITORY-CHANGE-AUDIT-2026-08-28.md](docs/REPOSITORY-CHANGE-AUDIT-2026-08-28.md) for the repository change-control and traceability record.
+
+
+## Quality and verification
+
+Documentation is intended to describe the implementation that is actually present. Automated tests, dependency/security controls and repository checks should be used where appropriate. Prototype, demonstration and production status are kept distinct; claims are not made beyond what the code and available evidence support.
